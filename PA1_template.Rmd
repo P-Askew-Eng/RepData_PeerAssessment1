@@ -52,11 +52,11 @@ plot(dailysteps$interval,dailysteps$avsteps,type="l",xlab="Interval",ylab="Numbe
 ```{r}
 maxint<-dailysteps[dailysteps$avsteps == max(dailysteps$avsteps),]
 ```
-The maximum average number of steps (`r maxint[2]`) is at interval `r maxint[1]`
+The maximum average number of steps **(`r maxint[2]`)** is at interval **`r maxint[1]`**
 
 ## Imputing missing values
 
-There are `r sum(is.na(activity))` NA data records in the original data.
+There are **`r sum(is.na(activity))`** NA data records in the original data.
 We can fill these in to give us a comprehensive data set.  The approach I have taken is to use the value of the mean for that interval as a substitute.
 
 ```{r}
